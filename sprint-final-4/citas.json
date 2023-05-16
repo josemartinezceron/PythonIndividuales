@@ -1,0 +1,10 @@
+[
+    {
+        "fecha": "20/06/2023",
+        "hora": "12:34",
+        "paciente": "jose",
+        "reservada": true,
+        "medico": "dani",
+        "tipo": "citamedicogeneral"
+    }
+]
