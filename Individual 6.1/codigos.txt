@@ -1,0 +1,33 @@
+pip install Django
+django-admin startproject nombre_proyecto
+python3 manage.py startapp aplicacionamanda
+midlwares
+endpoint es la ruta /ruta y se escribe patch(ruta/  en el codito en patch
+
+agregar include en urls del proyecto en el stamnet from django.urls import path , include
+
+en la misma ruta incluir path("", include("appbeta.urls")),    en urlpatterns = [
+    path('admin/', admin.site.urls),
+    path("", include("appbeta.urls")),
+]
+
+ahora se crea en la carpeta de la aplicacion  "mi caso appbeta" el archivo urls.py  donde se copia el contenido de urls.py del proyecto
+se importan las views y se borra el patch admin\ quedando asi:
+from . import views
+
+urlpatterns = [
+   
+    path("home/", views.home, name="home"),
+]
+
+para crear una vista en views.py se define una funcion y se le pasa como argumento request se agrega este stament :
+from django.shortcuts import render
+from django.http import HttpResponse
+#create yout views 
+def home(request):
+    return HttpResponse("<h1>Bienvenido a Nuestra Tienda<h1>")
+
+
+
+
+return render panchito html.
