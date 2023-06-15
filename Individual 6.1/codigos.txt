@@ -31,3 +31,5 @@ def home(request):
 
 
 return render panchito html.
+
+python3 manage.py createsuperuser
