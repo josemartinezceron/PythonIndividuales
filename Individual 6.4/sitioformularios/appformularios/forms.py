@@ -1,7 +1,3 @@
 from django import forms
-
-class UserCreationForm(forms.form):
-    pass
-
-class UserRegistrationForm(UserCreationForm):
+from django.contrib.auth.models import User
     
