@@ -1,0 +1,6 @@
+{% if perms.app_label.permission_name %} 
+en urls.py
+ from django.contrib.auth.decorators import login_required
+ urlpatterns = [
+    path('restringida/', loginrequired(RestringidaView.as_view()), name= 'restringida')
+ ]
