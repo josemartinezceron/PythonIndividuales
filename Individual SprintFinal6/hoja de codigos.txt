@@ -4,3 +4,5 @@ en urls.py
  urlpatterns = [
     path('restringida/', loginrequired(RestringidaView.as_view()), name= 'restringida')
  ]
+
+Terminado individual 6.6

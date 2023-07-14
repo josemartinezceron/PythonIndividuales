@@ -18,19 +18,17 @@
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
-            <span class="fs-4">ELBlogDigital</span>
+            <span class="fs-4">Te lo vendo</span>
           </a>
           {# los nuevos usuarios solo pueden ver home, registrar, login #}
           <ul class="nav nav-pills">
             <li class="nav-item"><a href="{%url 'home'%}" class="nav-link">Home</a></li>
-            {# Usuarios Staff pueden ver esta session #}
-            {% if perms.app_label.add_logentry %}
-              <li class="nav-item"><a href="{%url 'adminfront'%}" class="nav-link">Admin desde Front</a></li>
-            {% endif %}
             {% if  user.is_authenticated %}{# solo los usuarios autenticados pueden ver esta secion#}
             <li class="nav-item"><a href="{%url 'usuarios'%}" class="nav-link">Usuarios</a></li>
+            <li class="nav-item"><a href="{%url 'usuarios'%}" class="nav-link">Modulo Gestión</a></li>
             <li class="nav-item"><a href="{%url 'logout'%}" class="nav-link">Logout</a></li>
             {% else %}
+            <li class="nav-item"><a href="{%url 'usuarios'%}" class="nav-link">Realizar Pedidos</a></li>
             <li class="nav-item"><a href="{%url 'signup'%}" class="nav-link">Registrar</a></li>
             <li class="nav-item"><a href="{%url 'signin'%}" class="nav-link">Login</a></li>
             {% endif %}
@@ -42,7 +40,7 @@
         {% endblock %}
       </main>
       <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-        <p>"Blog de Noticias" escrito en Django By josemartinezceron</p>
+        <p>"Te lo vendo" escrito en Django By josemartinezceron</p>
         <p class="mb-0">
           <a href="#">Back to top</a>
         </p>
