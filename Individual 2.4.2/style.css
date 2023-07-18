@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+
+section {
+  transition: transform 0.2s ease;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+  width: 30%;
+  padding: 20px;
+  border: solid 1px #000;
+  padding: 10px 5px;
+  border-radius: 15px;
+}
+
+.main-content {
+  width: 70%;
+  padding: 20px;
+  border: solid 1px #000;
+   border-radius: 15px;
+}
+
+/* Resto del código... */
+
+/* Estilos para la vista de celular */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  .sidebar, .main-content {
+    width: 100%;
+  }
+}
+
+/* Estilos para la vista de tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+   body {
+    font-size: 18px;
+  }
+  
+   .container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+   
+  .image {
+    width: 50%;
+    height: auto;
+  }
+  .sidebar, .main-content {
+    width: 100%;
+  }
+}

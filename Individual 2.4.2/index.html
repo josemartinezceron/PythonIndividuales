@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="perfil.jpg" alt="Foto de perfil">
+      <h4>Conocimientos y Habilidades <span class="badge badge-success">Desarrollador Web</span></h4>
+      <ul>
+        <li>Desarrollo web front-end <span class="badge badge-info">Experto</span></li>
+        <li>Soporte técnico <span class="badge badge-info">Intermedio</span></li>
+        <li>Calidad y desarrollo de productos <span class="badge badge-info">Avanzado</span></li>
+        <li>Análisis químico <span class="badge badge-info">Avanzado</span></li>
+        <li>Manejo de oleoductos <span class="badge badge-info">Experto</span></li>
+      </ul>
+      <h4>Contacto</h4>
+      <ul>
+        <li>Teléfono: 123456789</li>
+        <li>Email: josemartinez@gmail.com</li>
+        <li>LinkedIn: linkedin.com/josemartinez</li>
+        <li>Twitter: @josemartinez</li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <header>
+        <h1>José Martínez Cerón <span class="badge badge-primary">Desarrollador Web Front End</span></h1>
+      </header>
+      <section>
+        <h3>Experiencia</h3>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class="card-title">Servicio Técnico</h4>
+            <p class="card-text">Zona de Puchuncaví-Zapallar</p>
+            <ul>
+              <li>Soporte Windows y Mac</li>
+              <li>Cambio de Hardware y reparaciones</li>
+              <li>Diseño de páginas web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class="card-title">Encargado de Calidad y Desarrollo</h4>
+            <p class="card-text">Marpro S.A.</p>
+            <ul>
+              <li>Encargado de Calidad en Fábrica de Productos Químicos y Detergentes Industriales</li>
+              <li>Encargado de Desarrollo de Nuevos Productos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class="card-title">Técnico Químico</h4>
+            <p class="card-text">Asociación Chilena de Seguridad</p>
+            <ul>
+              <li>Análisis de Higiene Industrial en ambientes de trabajo y Pruebas Biológicas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class="card-title">Operador de Oleoducto</h4>
+            <p class="card-text">Petrobras Energía</p>
+            <ul>
+              <li>Encargado de Oleoducto en planta de combustible</li>
+              <li>Encargado del stock de la planta, Equipos Críticos de Seguridad y Red de Incendios</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+      <!-- Resto del código... -->
+      <section>
+        <h3>Cursos | Idiomas</h3>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Inglés 25%</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Auditor Interno ISO 50%</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Brigadista de Incendios Industriales 75%</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Desarrollador Front End 100%</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Dejar un Comentario</h3>
+        <form>
+          <div class="form-group">
+            <label for="commentName">Nombre</label>
+            <input type="text" class="form-control" id="commentName" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="commentEmail">Correo Electrónico</label>
+            <input type="email" class="form-control" id="commentEmail" placeholder="Correo Electrónico">
+          </div>
+          <div class="form-group">
+            <label for="commentBody">Comentario</label>
+            <textarea class="form-control" id="commentBody" rows="3"></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="commentCheck">
+            <label class="form-check-label" for="commentCheck">Acepto los términos y condiciones</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Comentario</button>
+        </form>
+      </section>
+      <section>
+        <h3>Comentarios Recientes</h3>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ordenar Comentarios
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Más recientes</a>
+            <a class="dropdown-item" href="#">Más antiguos</a>
+          </div>
+        </div>
+        <!-- Aquí puede agregar la lista de comentarios -->
+      </section>
+
+      <footer>
+        <p>&copy; 2023 José Martínez Cerón</p>
+      </footer>
+    </div>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
