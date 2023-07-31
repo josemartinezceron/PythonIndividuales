@@ -1,0 +1,2 @@
+tipo,fecha,hora,paciente,medico,odontologo,ginecologo,reservada
+citamedicogeneral,23/06/1998,12:30,jose,juan,,,True

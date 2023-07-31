@@ -28,16 +28,16 @@ p{
 }
 #noticias-destacadas, #motores-de-busqueda, #diarios, #finanzas, #libros {
     float: left;
-    width: 33%;
+    width: 50%;
     background-color: aquamarine;
-    border: 5px solid transparent; /* Añade esto */
 }
 #noticias-destacadas:hover, #motores-de-busqueda:hover, #diarios:hover, #finanzas:hover, #libros:hover {
     background-color: white;
     border-color: red; /* Cambia esto */
 }
 footer {
-    position: fixed; bottom: 0;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
     background-color: gray;
