@@ -53,4 +53,30 @@ INSERT INTO CAPACITACION (codigo_curso, nombre, horario) VALUES
   (7, 'Curso de Finanzas Personales', 'Lunes 6:00 PM'), 
   (8, 'Taller de Yoga y Meditación', 'Miércoles 5:00 PM'), 
   (9, 'Curso de Desarrollo Personal', 'Jueves 7:00 PM'), 
-  (10, 'Taller de Pintura al Óleo', 'Viernes 4:00 PM'); 
+  (10, 'Taller de Pintura al Óleo', 'Viernes 4:00 PM');
+  
+INSERT INTO CAPACITACION (codigo_curso, nombre, horario) VALUES  
+  (11, 'Curso de Fotografía Digital', 'Martes 4:00 PM'),  
+  (12, 'Taller de Marketing en Redes Sociales', 'Jueves 6:00 PM'),  
+  (13, 'Curso de Programación Web', 'Viernes 3:00 PM');
+  
+INSERT INTO OPERADORES (RUN, nombre, apellido, direccion, correo_electronico) VALUES  
+  ('9999999999', 'Ricardo', 'Gómez', 'Calle 789', 'ricardo.gomez@example.com'),  
+  ('1010101010', 'Isabel', 'López', 'Avenida 987', 'isabel.lopez@example.com'),  
+  ('1212121212', 'Fernando', 'Hernández', 'Calle Este', 'fernando.hernandez@example.com');
+  
+ALTER TABLE CAPACITACION ADD costo DECIMAL(10,2);
+UPDATE CAPACITACION SET costo = 500.00 WHERE codigo_curso = 1;
+UPDATE CAPACITACION SET costo = 400.00 WHERE codigo_curso = 2;
+UPDATE CAPACITACION SET costo = 600.00 WHERE codigo_curso = 3;
+UPDATE CAPACITACION SET costo = 450.00 WHERE codigo_curso = 4;
+UPDATE CAPACITACION SET costo = 700.00 WHERE codigo_curso = 5;
+UPDATE CAPACITACION SET costo = 350.00 WHERE codigo_curso = 6;
+UPDATE CAPACITACION SET costo = 650.00 WHERE codigo_curso = 7;
+UPDATE CAPACITACION SET costo = 550.00 WHERE codigo_curso = 8;
+UPDATE CAPACITACION SET costo = 750.00 WHERE codigo_curso = 9;
+UPDATE CAPACITACION SET costo = 650.00 WHERE codigo_curso = 10;
+UPDATE CAPACITACION SET costo = 550.00 WHERE codigo_curso = 11;
+UPDATE CAPACITACION SET costo = 450.00 WHERE codigo_curso = 12;
+UPDATE CAPACITACION SET costo = 800.00 WHERE codigo_curso = 13;
+  
