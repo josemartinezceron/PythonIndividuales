@@ -17,7 +17,7 @@ class CreateUserForm(UserCreationForm):
     def clean_email(self):
         email = self.cleaned_data.get('email')
 
-        if User.objects.filter(email=email).exclude(pk=self.instance.pk).exist():
+        if User.objects.filter(email=email).exclude(pk=self.instance.pk).exists():
             raise forms.ValidationError("Este email está registrado actualmente")
         if len(email) > 350:
             raise forms.ValidationError('tu email supera el límite de texto')
